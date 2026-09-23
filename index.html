@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boda de Melanie & Eduardo · 24 · 10 · 2026</title>
+  <meta name="description" content="Acompáñanos a celebrar nuestra boda. Confirma tu asistencia, elige tu menú y comparte este día con nosotros." />
+  <link rel="icon" href="images/favicon.png" type="image/png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/responsive.css" />
+</head>
+<body>
+
+  <!-- ══════════ MÚSICA DE FONDO ══════════ -->
+  <audio id="bg-music" loop preload="auto">
+    <source src="assets/music/eyes.m4a" type="audio/mpeg" />
+  </audio>
+
+  <button id="music-toggle" class="music-toggle" aria-label="Activar música">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+      <path d="M12 3v10.55A4 4 0 1014 17V7h4V3h-6z"/>
+    </svg>
+  </button>
+
+  <!-- ══════════ PANTALLA DE BIENVENIDA ══════════ -->
+  <div id="welcome-overlay" class="welcome-overlay">
+    <div class="welcome-inner">
+      <p class="welcome-eyebrow">Nuestra Boda</p>
+      <h1 class="welcome-names">Melanie <span>&</span> Eduardo</h1>
+      <p class="welcome-date">24 · octubre · 2026</p>
+      <button id="enter-btn" class="btn-primary">Abrir invitación</button>
+    </div>
+  </div>
+
+  <!-- ══════════ NAVEGACIÓN ══════════ -->
+  <nav class="main-nav" id="main-nav">
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#historia">Historia</a></li>
+      <li><a href="#evento">Evento</a></li>
+      <li><a href="#itinerario">Itinerario</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#rsvp">RSVP</a></li>
+      <li><a href="#regalos">Regalos</a></li>
+    </ul>
+    <button class="nav-toggle" id="nav-toggle">☰</button>
+  </nav>
+
+  <!-- ══════════ HERO ══════════ -->
+  <header id="inicio" class="hero">
+    <div class="hero-bg" style="background-image:url('images/hero.jpg');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="eyebrow">Nos casamos</p>
+      <h1 class="script-names">Melanie & Eduardo</h1>
+      <div class="divider"></div>
+      <p class="hero-date">Sábado 24 de octubre de 2026</p>
+      <p class="hero-location">Capilla IJSUD · Xochimilco</p>
+
+      <!-- Cuenta regresiva -->
+      <div class="countdown" id="countdown">
+        <div class="cd-box"><span id="cd-days">00</span><small>Días</small></div>
+        <div class="cd-box"><span id="cd-hours">00</span><small>Horas</small></div>
+        <div class="cd-box"><span id="cd-minutes">00</span><small>Min</small></div>
+        <div class="cd-box"><span id="cd-seconds">00</span><small>Seg</small></div>
+      </div>
+
+      <a href="#rsvp" class="btn-primary mt-3">Confirmar asistencia</a>
+    </div>
+  </header>
+
+  <!-- ══════════ HISTORIA ══════════ -->
+  <section id="historia" class="section section-story">
+    <div class="container story-grid">
+      <div class="story-image">
+        <img src="images/story.jpeg" alt="Melanie y Eduardo" />
+      </div>
+      <div class="story-text">
+        <p class="eyebrow gold">Nuestra Historia</p>
+        <h2>Un amor que comenzó<br>gracias a la misión en Veracruz</h2>
+        <p>Hace casi 5 años nos encontramos por casualidad y desde entonces no nos hemos separado. Cada día, cada viaje, cada risa nos ha traído hasta este momento.</p>
+        <p>Hoy queremos celebrar con las personas que más queremos el inicio de nuestro para siempre. Gracias por ser parte de nuestra historia.</p>
+        <p class="signature">Con amor, Melanie & Eduardo</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CEREMONIA Y FIESTA ══════════ -->
+  <section id="evento" class="section section-evento">
+    <div class="container">
+      <p class="eyebrow gold center">El Gran Día</p>
+      <h2 class="center">Sellamiento & Celebración</h2>
+
+      <div class="evento-grid">
+        <article class="evento-card">
+          <div class="evento-icon">💍</div>
+          <h3>Sellamiento en el Templo</h3>
+          <p class="evento-time">11:45 hrs</p>
+          <p class="evento-place">Templo de la Ciudad de Mexico</p>
+          <p class="evento-address">Av. 510 90, Pueblo de San Juan de Aragón, Gustavo A. Madero Ciudad de México</p>
+          <a class="btn-link" target="_blank"
+             href="https://maps.app.goo.gl/XLjYstV4XHuyLrEp6">
+             Ver ubicación →
+          </a>
+        </article>
+
+        <article class="evento-card">
+          <div class="evento-icon">🥂</div>
+          <h3>Recepción</h3>
+          <p class="evento-time">5:00 PM</p>
+          <p class="evento-place">Capilla IJSUD Xochimilco</p>
+          <p class="evento-address">Ahuejotes 8A, Amp San Marcos Nte, Xochimilco, Ciudad de México</p>
+          <a class="btn-link" target="_blank"
+             href="https://maps.app.goo.gl/XhMyBaCLEvEFuBKt7">
+             Ver ubicación →
+          </a>
+        </article>
+      </div>
+
+      <!-- Dress code -->
+      <div class="dresscode">
+        <p class="eyebrow gold center">Código de Vestimenta</p>
+        <h3 class="center">Formal · Etiqueta rigurosa</h3>
+        <p class="center dresscode-note">
+          Damas: vestido largo · Caballeros: traje oscuro con corbata.<br>
+          <em>Reservamos el color blanco para la novia y el lila para la familia.</em>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ ITINERARIO / TIMELINE ══════════ -->
+  <section id="itinerario" class="section section-timeline">
+    <div class="container">
+      <p class="eyebrow gold center">Agenda del día</p>
+      <h2 class="center">Itinerario</h2>
+
+      <ul class="timeline">
+        <li><span class="tl-time">11:45 PM</span><div class="tl-body"><h4>Sellamiento</h4><p>Templo de la Ciudad de México</p></div></li>
+        <li><span class="tl-time">5:00 PM</span><div class="tl-body"><h4>Cóctel de bienvenida</h4><p>Jardín de la Capilla</p></div></li>
+        <li><span class="tl-time">5:30 PM</span><div class="tl-body"><h4>Recepción</h4><p>Salón Social</p></div></li>
+        <li><span class="tl-time">6:00 PM</span><div class="tl-body"><h4>Cena de gala</h4><p>Menú de tres tiempos</p></div></li>
+        <li><span class="tl-time">7:30 PM</span><div class="tl-body"><h4>Brindis y primer baile</h4><p>Pista principal</p></div></li>
+        <li><span class="tl-time">9:00 PM</span><div class="tl-body"><h4>Baile y celebración</h4><p>Grupo en vivo</p></div></li>
+        <li><span class="tl-time">10:30 PM</span><div class="tl-body"><h4>Corte de pastel</h4><p>Jardín</p></div></li>
+        <li><span class="tl-time">11:00 PM</span><div class="tl-body"><h4>Fin del evento</h4><p>Gracias por acompañarnos</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ══════════ GALERÍA ══════════ -->
+  <section id="galeria" class="section section-galeria">
+    <div class="container">
+      <p class="eyebrow gold center">Momentos</p>
+      <h2 class="center">Galería</h2>
+
+      <div class="gallery-grid" id="gallery-grid">
+        <a href="images/gallery-1.jpeg" class="g-item"><img src="images/gallery-1.jpeg" alt=""></a>
+        <a href="images/gallery-2.jpeg" class="g-item"><img src="images/gallery-2.jpeg" alt=""></a>
+        <a href="images/gallery-3.jpeg" class="g-item"><img src="images/gallery-3.jpeg" alt=""></a>
+        <a href="images/gallery-4.jpeg" class="g-item"><img src="images/gallery-4.jpeg" alt=""></a>
+        <a href="images/gallery-5.jpeg" class="g-item"><img src="images/gallery-5.jpeg" alt=""></a>
+        <a href="images/gallery-6.jpeg" class="g-item"><img src="images/gallery-6.jpeg" alt=""></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ RSVP + MENÚ + PASES ══════════ -->
+  <section id="rsvp" class="section section-rsvp">
+    <div class="container rsvp-container">
+      <p class="eyebrow gold center">Confirma tu asistencia</p>
+      <h2 class="center">RSVP</h2>
+      <p class="center subtitle">Por favor confirma antes del <strong>17 de Octubre de 2026</strong></p>
+
+      <!-- Búsqueda de invitado / pases -->
+      <div class="guest-search">
+        <label for="guest-code">Busca tu nombre o código de invitación:</label>
+        <div class="guest-search-row">
+          <input type="text" id="guest-code" placeholder="Ej: Sergio Pérez o código AB1234">
+          <button id="search-guest-btn" class="btn-secondary">Buscar</button>
+        </div>
+        <div id="guest-result" class="guest-result"></div>
+      </div>
+
+      <!-- Formulario RSVP -->
+      <form id="rsvp-form" class="rsvp-form" novalidate>
+        <div class="form-row">
+          <label>Nombre completo *</label>
+          <input type="text" name="nombre" required>
+        </div>
+
+        <div class="form-row">
+          <label>Correo electrónico *</label>
+          <input type="email" name="email" required>
+        </div>
+
+        <div class="form-row">
+          <label>Teléfono</label>
+          <input type="tel" name="telefono">
+        </div>
+
+        <div class="form-row">
+          <label>¿Asistirás? *</label>
+          <select name="asistencia" required>
+            <option value="">Selecciona…</option>
+            <option value="Sí, asistiré">Sí, asistiré</option>
+            <option value="No podré asistir">No podré asistir</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label>Número de pases que usarás</label>
+          <input type="number" name="pases" min="1" max="10" value="1">
+        </div>
+
+        <div class="form-row">
+          <label>Selecciona tu menú</label>
+          <select name="menu">
+            <option value="">Selecciona…</option>
+            <option value="Carne">Carne (Filete en salsa de vino tinto)</option>
+            <option value="Pollo">Pollo (Suprema rellena de queso)</option>
+            <option value="Pescado">Pescado (Salmón a las finas hierbas)</option>
+            <option value="Vegetariano">Vegetariano (Risotto de hongos)</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label>Menú infantil (niños)</label>
+          <select name="menuNinos">
+            <option value="Sin niños">Sin niños</option>
+            <option value="1">1 niño</option>
+            <option value="2">2 niños</option>
+            <option value="3">3 niños</option>
+            <option value="4+">4 o más</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label>Restricciones alimenticias / alergias</label>
+          <input type="text" name="restricciones" placeholder="Ej: Sin gluten, sin lactosa…">
+        </div>
+
+        <div class="form-row">
+          <label>¿Qué canción no puede faltar? 🎶</label>
+          <input type="text" name="cancion" placeholder="Canción y artista">
+        </div>
+
+        <div class="form-row">
+          <label>Mensaje para los novios</label>
+          <textarea name="mensaje" rows="4"></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary btn-full">Enviar confirmación</button>
+        <p id="rsvp-status" class="rsvp-status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ══════════ LISTA DE CONFIRMADOS + DOCUMENTOS ══════════ -->
+  <section id="confirmados" class="section section-confirmados">
+    <div class="container">
+      <p class="eyebrow gold center">Nuestros invitados</p>
+      <h2 class="center">Confirmados</h2>
+      <p class="center subtitle">Consulta la lista de personas que ya confirmaron su asistencia.</p>
+
+      <div class="confirmados-actions">
+        <button id="load-confirmados" class="btn-secondary">Ver lista de confirmados</button>
+        <a id="download-menu" class="btn-link" href="#" target="_blank">📄 Descargar menú</a>
+        <a id="download-playlist" class="btn-link" href="#" target="_blank">🎵 Descargar playlist</a>
+        <a id="download-agenda" class="btn-link" href="#" target="_blank">🗓️ Descargar agenda</a>
+      </div>
+
+      <div id="confirmados-list" class="confirmados-list"></div>
+    </div>
+  </section>
+
+  <!-- ══════════ PLAYLIST ══════════ -->
+  <section id="playlist" class="section section-playlist">
+    <div class="container">
+      <p class="eyebrow gold center">La música de nuestra boda</p>
+      <h2 class="center">Playlist colaborativa</h2>
+      <p class="center subtitle">Estas son las canciones que sonarán ese día. ¡Sugiere las tuyas en el RSVP!</p>
+      <ul id="playlist-list" class="playlist-list"></ul>
+    </div>
+  </section>
+
+  <!-- ══════════ REGALOS ══════════ -->
+  <section id="regalos" class="section section-regalos">
+    <div class="container regalos-grid">
+      <div class="regalo-card">
+        <div class="regalo-icon">🎁</div>
+        <h3>Mesa de regalos</h3>
+        <p>Tu presencia es nuestro mayor regalo. Si deseas obsequiarnos algo, hemos preparado las siguientes opciones:</p>
+        <a class="btn-secondary" href="https://www.liverpool.com.mx" target="_blank">Liverpool · Evento #123456</a>
+      </div>
+      <div class="regalo-card">
+        <div class="regalo-icon">💌</div>
+        <h3>Lluvia de sobres</h3>
+        <p>Habrá un buzón disponible el día del evento para quienes prefieran esta opción.</p>
+      </div>
+      <div class="regalo-card">
+        <div class="regalo-icon">🏦</div>
+        <h3>Transferencia</h3>
+        <p>Banco: BBVA<br>Beneficiario: Melanie López<br>CLABE: 0123 4567 8901 2345 67</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ INSTAGRAM WALL ══════════ -->
+  <section id="instagram" class="section section-instagram">
+    <div class="container">
+      <p class="eyebrow gold center">Comparte tus fotos</p>
+      <h2 class="center">#melylaloalinfinitoymas</h2>
+      <p class="center subtitle">Etiqueta tus fotos con nuestro hashtag y aparecerán aquí.</p>
+
+      <div class="insta-grid">
+        <a href="https://instagram.com" target="_blank"><img src="images/insta-1.jpg" alt=""></a>
+        <a href="https://instagram.com" target="_blank"><img src="images/insta-2.jpg" alt=""></a>
+        <a href="https://instagram.com" target="_blank"><img src="images/insta-3.jpg" alt=""></a>
+        <a href="https://instagram.com" target="_blank"><img src="images/insta-4.jpg" alt=""></a>
+        <a href="https://instagram.com" target="_blank"><img src="images/insta-5.jpg" alt=""></a>
+        <a href="https://instagram.com" target="_blank"><img src="images/insta-6.jpg" alt=""></a>
+      </div>
+
+      <p class="center mt-3">
+        <a class="btn-secondary" href="https://instagram.com/explore/tags/melylaloalinfinitoymas" target="_blank">
+          Ver todas las fotos en Instagram
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ══════════ MAPA ══════════ -->
+  <section id="mapa" class="section section-mapa">
+    <div class="container">
+      <p class="eyebrow gold center">Cómo llegar</p>
+      <h2 class="center">Ubicación</h2>
+      <div class="map-wrapper">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.761736791951!2d-99.08940402533801!3d19.465836881820643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fbc4648b0ee7%3A0x61382b34e9618369!2sTemplo%20de%20la%20Ciudad%20de%20M%C3%A9xico!5e0!3m2!1ses-419!2smx!4v1790115728094!5m2!1ses-419!2smx"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <p class="center mt-3">
+        <a class="btn-secondary" target="_blank"
+           href="https://maps.app.goo.gl/XLjYstV4XHuyLrEp6">
+          Abrir en Google Maps
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-names">Melanie & Eduardo</p>
+      <p class="footer-date">24 · 02 · 2026</p>
+      <p class="footer-note">Gracias por ser parte de nuestra historia.</p>
+    </div>
+  </footer>
+
+  <!-- ══════════ LIGHTBOX GALERÍA ══════════ -->
+  <div id="lightbox" class="lightbox">
+    <button class="lb-close" id="lb-close">×</button>
+    <img id="lb-img" src="" alt="">
+  </div>
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+  <script src="js/countdown.js"></script>
+  <script src="js/rsvp.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/music.js"></script>
+</body>
+</html>
