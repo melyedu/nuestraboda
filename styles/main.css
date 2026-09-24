@@ -568,7 +568,7 @@ p { font-size: 1rem; color: var(--grey); margin-bottom: 1rem; }
 .section-regalos { background: var(--white); }
 .regalos-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 .regalo-card {
