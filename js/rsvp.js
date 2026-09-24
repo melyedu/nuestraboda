@@ -3,7 +3,7 @@
    ⚠️ Reemplaza la URL de APPS_SCRIPT_URL por la tuya
 ══════════════════════════════════════════ */
 
-const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbXXXXXXXXXXXXXXXX/exec';
+const APPS_SCRIPT_URL = 'https://script.google.com/u/0/home/projects/1A5lfmJl8JvtiM9YqOEMyDLBnR7F6aN1rHMMRQE9l1S4JPbpZC0KBp-DQ/edit';
 const GUESTS_JSON = 'data/guests.json';
 
 /* ---------- BÚSQUEDA DE INVITADO / PASES ---------- */

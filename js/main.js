@@ -59,7 +59,10 @@ document.addEventListener('DOMContentLoaded', () => {
   /* --- Año dinámico (opcional) --- */
   document.querySelectorAll('.year').forEach(el => el.textContent = new Date().getFullYear());
 
-  /* --- Cargar playlist --- */
+ 
+});
+
+ /* --- Cargar playlist --- */
 fetch('data/playlist.json')
   .then(r => r.json())
   .then(songs => {
@@ -73,4 +76,3 @@ fetch('data/playlist.json')
     `).join('');
   })
   .catch(() => {});
-});

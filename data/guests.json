@@ -1,7 +1,7 @@
 [
-  { "codigo": "AB1234", "nombre": "Ana Pérez García",       "pases": 2, "mesa": "Mesa 1" },
-  { "codigo": "CD5678", "nombre": "Carlos Ramírez López",   "pases": 4, "mesa": "Mesa 3" },
-  { "codigo": "EF9012", "nombre": "Familia Torres Mendoza", "pases": 5, "mesa": "Mesa 5" },
-  { "codigo": "GH3456", "nombre": "María Fernanda Ruiz",    "pases": 1, "mesa": "Mesa 2" },
-  { "codigo": "IJ7890", "nombre": "Jorge Hernández Solís",  "pases": 2, "mesa": "Mesa 4" }
+  { "codigo": "AB1234", "nombre": "Juan Pablo Castillo Trujillo",       "pases": 3, "mesa": "Mesa 1" },
+  { "codigo": "CD5678", "nombre": "Sariah Getsemani Trujillo Sanchez",   "pases": 4, "mesa": "Mesa 3" },
+  { "codigo": "EF9012", "nombre": "Jose Armando Gonzalez  Mondragon", "pases": 2, "mesa": "Mesa 5" },
+  { "codigo": "GH3456", "nombre": "Armando Jared Gonzalez Leon",    "pases": 1, "mesa": "Mesa 2" },
+  { "codigo": "IJ7890", "nombre": "Iza Rebeca ",  "pases": 2, "mesa": "Mesa 4" }
 ]
