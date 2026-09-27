@@ -4,5 +4,19 @@
   { "titulo": "All of Me",         "artista": "John Legend" },
   { "titulo": "Can't Help Falling in Love", "artista": "Elvis Presley" },
   { "titulo": "A Thousand Years",  "artista": "Christina Perri" },
-  { "titulo": "Marry You",         "artista": "Bruno Mars" }
+  { "titulo": "Marry You",         "artista": "Bruno Mars" },
+  { "titulo": "I Don't Want to Miss a Thing", "artista": "Aerosmith" },
+  { "titulo": "You Are the Reason", "artista": "Calum Scott" },
+  { "titulo": "Just the Way You Are", "artista": "Bruno Mars" },
+  { "titulo": "I Will Always Love You", "artista": "Whitney Houston" },
+  { "titulo": "Make You Feel My Love", "artista": "Adele" },
+  { "titulo": "Say You Won't Let Go", "artista": "James Arthur" },
+  { "titulo": "How Long Will I Love You", "artista": "Ellie Goulding" },
+  { "titulo": "I Choose You",       "artista": "Sara Bareilles" },
+  { "titulo": "Con los años que me quedan", "artista": "Gloria Estefan" },
+  { "titulo": "La mujer que me ama",         "artista": "Armando Manzanero" },
+  { "titulo": "Can't Help Falling In Love",    "artista": "Elvis Presley" },
+  { "titulo": "Amorcito Corazon", "artista": "Los Panchos" },
+  { "titulo": "Adoro",   "artista": "Armando Manzanero" },
+  { "titulo": "Novia Mia",          "artista": "Los tres Reyes" }
 ]
